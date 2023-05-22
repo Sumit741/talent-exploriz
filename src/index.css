@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.home-container {
+  background: url("./assets/creative.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-container .view {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container .view .content {
+  width: 50%;
+}
+
+.content h1 {
+  font-size: 55px;
+}
+
+.content h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.content h2:nth-child(2) {
+  color: rgb(192, 80, 5);
+  font-weight: 600;
+}
+
+.img-container {
+  width: 80px;
+}
+
+img {
+  width: 100%;
+}
+
+.social-media-container {
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.social-media-container .links {
+  background-color: rgb(192, 80, 5);
+  text-decoration: none;
+  color: white;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px !important;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.social-media-container .links:nth-child(1) {
+  margin-left: 0;
 }
